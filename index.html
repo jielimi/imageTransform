@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>css3 image scale </title>
+
+<style type="text/css">
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+.container{ width: 1024px; margin: 0 auto; padding: 20px; }
+.image-wrap { float: left; width: 300px; height: 180px; margin: 20px 10px; border: 1px solid silver; overflow: hidden; }
+.image-wrap img { display: block;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translate3d(0,0,0);
+ }
+.image-wrap:hover img { 
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+ }
+</style>
+</head>
+<body>
+<div class="container">
+	<ul class="clearfix">
+		<li class="image-wrap">
+			<img src="images/1.jpg" alt="xx" width="300" height="180" />
+		</li>
+		<li class="image-wrap">
+			<img src="images/2.jpg" alt="xx" width="300" height="180" />
+		</li>
+		<li class="image-wrap">
+			<img src="images/3.jpg" alt="xx" width="300" height="180" />
+		</li>
+		<li class="image-wrap">
+			<img src="images/4.jpg" alt="xx" width="300" height="180" />
+		</li>
+		<li class="image-wrap">
+			<img src="images/5.jpg" alt="xx" width="300" height="180" />
+		</li>
+		<li class="image-wrap">
+			<img src="images/6.jpg" alt="xx" width="300" height="180" />
+		</li>
+	</ul>
+</div>
+</body>
+</html>
